@@ -1,6 +1,6 @@
 const fs = require('fs');
 
-const rawData = fs.readFileSync('sonar-sweep-values.txt').toString().split("\n");
+const rawData = fs.readFileSync('day01/demo-values.txt').toString().split("\n");
 const parsedData = rawData.map((value) => {
     return parseInt(value);
 })

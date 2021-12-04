@@ -1,6 +1,6 @@
 const fs = require('fs');
 
-console.log(getMeasurementIncreaseCount(fs.readFileSync('demo-values.txt').toString().split("\n")));
+console.log(getMeasurementIncreaseCount(fs.readFileSync('day01/demo-values.txt').toString().split("\n")));
 
 function getMeasurementIncreaseCount(sonarSweepValues) {
     let measurementsLargerThanPrevious=0;
