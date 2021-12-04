@@ -5,7 +5,7 @@ console.log(getMeasurementIncreaseCount(fs.readFileSync('demo-values.txt').toStr
 function getMeasurementIncreaseCount(sonarSweepValues) {
     let measurementsLargerThanPrevious=0;
     sonarSweepValues.forEach((value,index) => {
-        if(value>sonarSweepValues[index-1]){
+        if(parseInt(value)>parseInt(sonarSweepValues[index-1])){
             measurementsLargerThanPrevious++;
         }
     });
